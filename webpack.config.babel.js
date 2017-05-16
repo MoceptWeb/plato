@@ -33,6 +33,7 @@ const webpackConfig = {
       context: '/api',
       target: 'http://localhost:3001',
       pathRewrite: {
+        // '^/api': '' // Host path & target path conversion
         '^/api': '' // Host path & target path conversion
       }
     }],

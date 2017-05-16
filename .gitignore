@@ -17,3 +17,8 @@ test/e2e/reports
 *.iml
 out
 gen
+node_modules
+.dist
+
+.vscode
+.idea

@@ -152,6 +152,7 @@
           "precision": 0
         }
       ],
+      "appraise": "AB",
       "remark": "Jg",
       "attachments": [
         "1c8086a8-3c15-4133-a4aa-3e6b69cf5801"
@@ -209,6 +210,7 @@
         "211eb963-f18d-46ae-a7c8-4afba5a5f1c5",
         "ea605b2c-160f-4814-b1af-76f87f8ca981"
       ],
+      "appraise": "B",
       "provider": 2079452257,
       "recorder": 2079452257,
       "record_time": "2017-05-05T17:07:00.000+0800",
@@ -253,6 +255,7 @@
           "precision": 0
         }
       ],
+      "appraise": "D",
       "remark": "4058029050590590590",
       "attachments": [
         "c815d874-2d9e-429e-aedd-00000cd55351",
@@ -314,6 +317,7 @@
         "65b2404b-7264-4e0d-89bc-7a024b9409e3",
         "c1fef488-b787-42cc-9f30-9bf7e7c5dd00"
       ],
+      "appraise": "W",
       "provider": 2079452257,
       "recorder": 2079452257,
       "record_time": "2017-05-04T11:50:00.000+0800",
@@ -370,6 +374,7 @@
       "create_time": "2017-05-04T11:50:13.900+0800",
       "biz_type": "MOTION",
       "status": 0,
+      "appraise": "DW",
       "category": {
         "category_id": "58ed8d61a3102568c1175076",
         "parent_id": "58ed8d61a3102568c117506f",
@@ -413,6 +418,7 @@
         "bd281616-032a-4fe5-af56-14507e336ff9",
         "6c83eb2e-5191-4157-b0f5-5e3af961153a"
       ],
+      "appraise": "WA",
       "provider": 2079452257,
       "recorder": 2079452257,
       "record_time": "2017-05-04T11:08:00.000+0800",
@@ -452,6 +458,7 @@
           "precision": 0
         }
       ],
+      "appraise": "CA",
       "remark": "",
       "attachments": [],
       "provider": 2079452257,

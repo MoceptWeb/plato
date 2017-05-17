@@ -144,9 +144,6 @@ export default {
       this.endY = undefined
       this.draging = false
     },
-    create () {
-      debugger
-    },
     reset () {
       this.posting = false
       this.deleteDone = true

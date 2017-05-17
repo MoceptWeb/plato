@@ -37,12 +37,12 @@
                       <span class="data-unit" v-if="showUnit(unitItem.unit)">{{__(unitItem.unitLabel)}}</span>
                     </li>
                   </ul>
-                  <div class="record-remark">{{item.remark}}</div>
+                  <div v-if="item.remark" class="record-remark">{{item.remark}}</div>
                 </div>
                 <div class="record-award">
-                  <div class="record-award-content" v-if="item.recorder !== item.provider">
+                  <div class="record-award-content">
                     <div class="appraise" v-if="item.appraise">
-                      <span>{{item.appraise | appraiseFilter}}</span>
+                      <span>{{item.appraise}}</span>
                       <c-icon cls="ribbon"></c-icon>
                     </div>
                     <div class="recorderInfo">
@@ -131,7 +131,7 @@ export default {
   methods: {
     ...mapActions(['fetchLogList']),
     _golog (id) {
-      this.$router.push(`/log/${id}`)
+      this.$router.push(`/records/${id}`)
     },
     delRecord (id) {
       this.deleteId = id

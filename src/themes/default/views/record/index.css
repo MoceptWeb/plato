@@ -131,7 +131,7 @@
   background-color: rgba(204, 204, 204, 0.5);
 
   & .c-loading {
-    margin-top: dpr(40px);
+    margin-top: dpr(20px);
     background-color: #fff;
 
     &.show-more {

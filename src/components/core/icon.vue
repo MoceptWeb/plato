@@ -19,11 +19,11 @@ export default {
   },
 
   beforeMount () {
-    this.html = entities[this.$slots.default[0].text] || ' '
+    this.html = this.$slots.default && entities[this.$slots.default[0].text] || ' '
   },
 
   beforeUpdate () {
-    this.html = entities[this.$slots.default[0].text] || ' '
+    this.html = this.$slots.default && entities[this.$slots.default[0].text] || ' '
   }
 }
 

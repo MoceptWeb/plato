@@ -27,7 +27,7 @@
                 @change="triggerMove"
                 @delete="delRecord">
                 <div class="record-icon">
-                    <c-icon cls='icon'>{{item.category && item.category.icon || 'file-text'}}</c-icon>
+                    <c-icon cls='icon'>{{item.category && item.category.icon}}</c-icon>
                     <p class="sport-name">{{item.category && __(item.category.name)}}</p>
                 </div>
                 <div class="record-info">

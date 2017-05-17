@@ -176,7 +176,7 @@
             "precision": 0
           }
         ],
-        "icon": "tennis",
+        "icon": "bug",
         "rank": 2,
         "source": "CUSTOM",
         "provider": 2079452257,
@@ -229,7 +229,7 @@
             "precision": 0
           }
         ],
-        "icon": "diving",
+        "icon": "calendar",
         "rank": 2,
         "source": "DEFAULT",
         "biz_type": "MOTION",
@@ -278,7 +278,7 @@
             "precision": 0
           }
         ],
-        "icon": "diving",
+        "icon": "checklist",
         "rank": 2,
         "source": "DEFAULT",
         "biz_type": "MOTION",
@@ -384,7 +384,7 @@
             "precision": 2
           }
         ],
-        "icon": "running",
+        "icon": "circuit-board",
         "rank": 2,
         "source": "DEFAULT",
         "biz_type": "MOTION",
@@ -433,7 +433,7 @@
             "precision": 2
           }
         ],
-        "icon": "running",
+        "icon": "cloud-download",
         "rank": 2,
         "source": "DEFAULT",
         "biz_type": "MOTION",
@@ -470,7 +470,7 @@
             "precision": 0
           }
         ],
-        "icon": "diving-free",
+        "icon": "comment",
         "rank": 2,
         "source": "DEFAULT",
         "biz_type": "MOTION",
@@ -516,7 +516,7 @@
             "precision": 0
           }
         ],
-        "icon": "taekwondo",
+        "icon": "device-camera",
         "rank": 2,
         "source": "CUSTOM",
         "provider": 2079452257,
@@ -563,7 +563,7 @@
             "precision": 2
           }
         ],
-        "icon": "running",
+        "icon": "device-desktop",
         "rank": 2,
         "source": "DEFAULT",
         "biz_type": "MOTION",
@@ -609,7 +609,7 @@
             "precision": 2
           }
         ],
-        "icon": "sprint",
+        "icon": "broadcast",
         "rank": 2,
         "source": "DEFAULT",
         "biz_type": "MOTION",

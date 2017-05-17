@@ -1,11 +1,17 @@
 <template>
-  <i class="c-icon" v-html="html"><slot></slot></i>
+  <i class="c-icon" :class="cls" v-html="html"><slot></slot></i>
 </template>
 
 <script>
 import entities from './assets/icon-entities'
 
 export default {
+  props: {
+    cls: {
+      type: [String, Array],
+      default: ''
+    }
+  },
   data () {
     return {
       html: ' '

@@ -152,7 +152,7 @@
       & .record-list {
         & .record-item {
           display: flex;
-          height: dpr(150px);
+          height: dpr(130px);
           border-bottom: dpr(1px) solid #ccc;
           background-color: #fff;
           color: #666;
@@ -165,7 +165,7 @@
             width: dpr(120px);
 
             & .icon {
-              font-size: dpr(30px);
+              font-size: dpr(48px);
             }
 
             & .sport-name {
@@ -174,7 +174,7 @@
               text-align: center;
               text-overflow: ellipsis;
               white-space: nowrap;
-              font-size: dpr(30px);
+              font-size: dpr(24px);
             }
           }
 

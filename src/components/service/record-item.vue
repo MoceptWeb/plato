@@ -114,8 +114,8 @@ export default {
       } else {
         offset = endX - startX + this.scrollOffset
       }
-      if (offset < -100) {
-        offset = -100
+      if (offset < -200) {
+        offset = -200
       }
 
       if (offset > 0) {
@@ -130,7 +130,7 @@ export default {
         e.preventDefault()
         e.stopPropagation()
       }
-      if (this.offset > -100) {
+      if (this.offset > -200) {
         this.offset = 0
         this.animation = true
       }
@@ -188,7 +188,7 @@ export default {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  width: 100px;
+  width: dpr(200px);
   height: 100%;
   background-color: #ff4949;
   color: #fff;

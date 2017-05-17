@@ -95,7 +95,7 @@ export default {
       isOwn: !this.$route.params.userId,
       deleteDone: false,
       deleteId: undefined,
-      threshold: 100
+      threshold: 200
     }
   },
 
@@ -185,7 +185,7 @@ export default {
       }
     },
     triggerMove (id, offset) {
-      if (Math.abs(offset) === 100) {
+      if (Math.abs(offset) === 200) {
         this.deleteId = id
       } else {
         this.deleteId = undefined

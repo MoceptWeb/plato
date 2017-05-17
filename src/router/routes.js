@@ -54,5 +54,12 @@ export default [
       icon: 'globe'
     },
     component: () => System.import('views/globe')
+  },
+  {
+    path: '/record',
+    meta: {
+      icon: 'file-text'
+    },
+    component: () => System.import('views/record')
   }
 ]

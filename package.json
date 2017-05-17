@@ -24,6 +24,8 @@
     "push": "bash ./cli/push.sh"
   },
   "dependencies": {
+    "axios": "^0.16.1",
+    "iscroll": "^5.2.0",
     "lodash.isplainobject": "^4.0.6",
     "nuo": "^1.0.0",
     "query-string": "^4.2.3",

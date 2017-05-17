@@ -30,11 +30,11 @@ const webpackConfig = {
     port: config.server_port,
     // proxy is useful for debugging
     proxy: [{
-      context: '/api',
+      // context: '/api',
+      context: '/',
       target: 'http://localhost:3001',
       pathRewrite: {
         // '^/api': '' // Host path & target path conversion
-        '^/api': '' // Host path & target path conversion
       }
     }],
     compress: true,
@@ -72,6 +72,10 @@ const webpackConfig = {
         options: {
           loaders: {
             css: __PROD__ ? ExtractTextPlugin.extract({
+              loader: 'css-loader?sourceMap',
+              fallbackLoader: 'vue-style-loader'
+            }) : 'vue-style-loader!css-loader?sourceMap',
+            postcss: __PROD__ ? ExtractTextPlugin.extract({
               loader: 'css-loader?sourceMap',
               fallbackLoader: 'vue-style-loader'
             }) : 'vue-style-loader!css-loader?sourceMap',

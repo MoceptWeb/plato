@@ -3,7 +3,8 @@ import { ONE_MINUTE } from '../constants'
 
 export default template({
   namespace: 'faq',
-  source: __DEV__ ? '/api/faq' : '/db/faq.json',
+  // source: __DEV__ ? '/api/faq' : '/db/faq.json',
+  source: __DEV__ ? '/faq' : '/db/faq.json',
   expires: ONE_MINUTE,
   memcache: ONE_MINUTE / 6, // cache for ten seconds
   getters: {

@@ -8,8 +8,7 @@
     <div :style="style" :class="['slot-container', {animation}]">
       <slot></slot>
     </div>
-    <div
-      v-show="offset !== 0"
+    <div ref="right"
       :class="['delete', {posting}, {animation}, {done}]"
       @click.stop.prevent="clickDelete(id)">
       <span>
@@ -45,7 +44,8 @@ export default {
       animation: false,
       offset: 0,
       posting: false,
-      scrollOffset: 0
+      scrollOffset: 0,
+      threshold: 0
     }
   },
   computed: {
@@ -62,6 +62,9 @@ export default {
     offset (val) {
       this.$emit('change', this.id, val)
     }
+  },
+  mounted () {
+    this.threshold = this.$refs.right.clientWidth
   },
   methods: {
     dragStart (id, e) {
@@ -114,8 +117,8 @@ export default {
       } else {
         offset = endX - startX + this.scrollOffset
       }
-      if (offset < -200) {
-        offset = -200
+      if (offset < -this.threshold) {
+        offset = -this.threshold
       }
 
       if (offset > 0) {
@@ -130,7 +133,7 @@ export default {
         e.preventDefault()
         e.stopPropagation()
       }
-      if (this.offset > -200) {
+      if (this.offset > -this.threshold) {
         this.offset = 0
         this.animation = true
       }
@@ -140,6 +143,9 @@ export default {
       this.endX = undefined
       this.endY = undefined
       this.draging = false
+    },
+    create () {
+      debugger
     },
     reset () {
       this.posting = false
@@ -188,7 +194,8 @@ export default {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  width: dpr(200px);
+  /*width: dpr(200px);*/
+  padding: 0 dpr(50px);
   height: 100%;
   background-color: #ff4949;
   color: #fff;

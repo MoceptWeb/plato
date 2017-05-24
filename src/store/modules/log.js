@@ -4,7 +4,8 @@ import { createAction, handleAction } from 'vuex-actions'
 import { LOC_RES } from 'utils/config'
 import {
   // PROMISE_SUCCESS,
-  FETCH_LOG_LIST
+  FETCH_LOG_LIST,
+  DELETE_LOG,
 } from '../constants'
 
 const { base } = LOC_RES
@@ -29,6 +30,12 @@ const actions = {
         count: 28,
         items: response
       }
+    })
+  }),
+  deleteLog: createAction(DELETE_LOG, payload => {
+    const { id } = payload
+    return request(`${base}/records/${id}`, {
+      method: 'delete'
     })
   })
 /*  fetchLogList1 ({ commit }, {
@@ -80,14 +87,6 @@ const actions = {
   }*/
 }
 
-/* const mutations = {
-  [FETCH_LOG_LIST] (state, { payload, meta }) {
-    if (meta && meta.promise === PROMISE_SUCCESS) {
-      state = payload
-      state.logList.time = Date.now()
-    }
-  }
-}*/
 const mutations = {
   [FETCH_LOG_LIST]: handleAction({
     success: (state, mutation) => {

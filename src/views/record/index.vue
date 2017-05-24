@@ -129,7 +129,7 @@ export default {
     }
   },
   methods: {
-    ...mapActions(['fetchLogList']),
+    ...mapActions(['fetchLogList', 'deleteLog']),
     _golog (id) {
       this.$router.push(`/records/${id}`)
     },

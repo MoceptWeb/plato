@@ -5,7 +5,7 @@ import { LOC_RES } from 'utils/config'
 import {
   // PROMISE_SUCCESS,
   FETCH_LOG_LIST,
-  DELETE_LOG,
+  DELETE_LOG
 } from '../constants'
 
 const { base } = LOC_RES
@@ -14,11 +14,14 @@ const state = {
   logList: {
     time: null,
     items: []
+  },
+  logInfo: {
   }
 }
 
 const getters = {
-  logList: state => state.logList
+  logList: state => state.logList,
+  logInfo: state => state.logInfo
 }
 
 const actions = {
@@ -95,6 +98,17 @@ const mutations = {
     },
     error: state => {
       state.logList.time = Date.now()
+    }
+  }),
+  [DELETE_LOG]: handleAction({
+    success: (state, mutation) => {
+      state.logInfo = {
+        time: Date.now(),
+        delete: true
+      }
+    },
+    error: state => {
+      state.logInfo.delete = false
     }
   })
 }

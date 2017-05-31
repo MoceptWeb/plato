@@ -127,7 +127,7 @@ export default {
       }
       this.firstLoad = false
     },
-   'logInfo.time' () {
+    'logInfo.time' () {
       if (this.logInfo.delete) {
         const deleteId = this.deleteId
         this.deleteDone = true

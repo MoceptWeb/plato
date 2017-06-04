@@ -28,6 +28,7 @@
     "iscroll": "^5.2.0",
     "lodash.isplainobject": "^4.0.6",
     "nuo": "^1.0.0",
+    "plato-request": "^0.1.4",
     "query-string": "^4.2.3",
     "string-template": "^1.0.0",
     "vue": "^2.1.3",

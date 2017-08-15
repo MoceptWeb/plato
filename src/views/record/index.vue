@@ -128,17 +128,18 @@ export default {
       this.firstLoad = false
     },
     'logInfo.time' () {
-      if (this.logInfo.delete) {
-        const deleteId = this.deleteId
-        this.deleteDone = true
+      const _this = this
+      if (_this.logInfo.delete) {
+        const deleteId = _this.deleteId
+        _this.deleteDone = true
         setTimeout(() => {
-          this.items = this.items.filter(item => {
-            return item.record_id !== deleteId
+          _this.items = _this.items.filter(item => {
+            return item.id !== deleteId
           })
-          this.deleteDone = false
-          this.deleteId = undefined
-          if (this.items.length === 0) {
-            this.reset()
+          _this.deleteDone = false
+          _this.deleteId = undefined
+          if (_this.items.length === 0) {
+            _this.reset()
           }
         }, 1000)
       }
